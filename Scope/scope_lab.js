@@ -11,6 +11,9 @@ const globalConst = "I'm a global constant";
     const blockConst = "I'm a block-scoped const";
 }
 
+blockVar = "Garn"
+blockLet = "Yar"
+blockConst = "Do y' say so"
 
 // Global scope
 console.log(globalVar); // Output: "I'm a global variable"
