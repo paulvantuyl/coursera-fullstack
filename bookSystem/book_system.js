@@ -21,18 +21,19 @@ function addBook() {
     }
 }
 
-// TODO: add buttons to delete? I'm not understanding how
+// TODO: add buttons
 // <button onclick="editbook(${index})">Edit</button>&nbsp;
-// <button onclick="deletebook(${index})">Delete</button>
-
+// For some reason the map is adding in a comma after the delete button
 function showbooks() {
-    const booksDiv = books.map((book, index) => `
-        <h1>book Number: ${index + 1}</h1>
+    const booksDiv = books.map((book, index) => 
+        `
+        <h2>Book Number: ${index + 1}</h2>
         <p><strong>Book name: </strong>${book.name}</p>
         <p><strong>Author name: </strong>${book.authorName}</p>
         <p><strong>Book Description: </strong>${book.bookDescription}</p>
         <p><strong>Number of pages: </strong>${book.pagesNumber}</p>
-    `);
+        <button onclick="deletebook(${index})">Delete</button>
+        `);
     
     document.getElementById('books').innerHTML = booksDiv;
 }
@@ -47,6 +48,10 @@ function clearInputs() {
 // Splice syntax
 // splice(start, deleteCount)
 // "index" is not finding anything and errors
-function deletebook() {  
+function deletebook(index) {  
     books.splice(index, 1);
+    console.log(index, books);
+    // Call the showbooks function so I can clear the HTML
+
+    showbooks();
 }
