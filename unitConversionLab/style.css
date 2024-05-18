@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    background-color: rgb(190, 190, 190);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #483355;
+}
+
+header {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(240, 234, 245);
+    flex: auto;
+    padding-left: 10px;
+}
+
+.topmenu {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1mm;
+    background-color: #483355;
+    color: whitesmoke;
+    font-size: 20px;
+    transition-property: all;
+    transition-duration: 120ms;
+    text-decoration: none;
+}
+
+.topmenu:hover {
+    color: white;
+    background-color: #382742;
+}
+
+/* Container for all three conversion calc sections */
+#all-conversion-sections {
+    display: grid;
+    justify-content: center;
+}
+
+figure {
+    float: left;
+    justify-self: auto;
+    width: 200px;
+}
+
+img { width: 200px }
+
+figcaption {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+
+fieldset button {
+    width: fit-content;
+    padding: 0 15px;
+    margin: 4px 0;
+    font-size: 20px;
+    font-weight: 700;
+    border: transparent;
+    border-radius: 40px;
+    background-color: lightgreen;
+}
+
+fieldset button:hover { cursor: pointer }
+
+/* Calculator panel */
+/* Overall left margin of 50px? */
+.b {
+    display: flex;
+    width: 600px;
+    min-height: 360px;
+    margin: 25px;
+    padding: 20px;
+    border-top: 20px solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.temperature { border-color: green }
+.weight      { border-color: coral }
+.distance    { border-color: cyan }
+
+legend {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/* Floating home button? */
+.iconbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 24px;
+    right: 12px;
+    background-color: cyan;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, .5);
+    border-radius: 100%;
+}
+
+.iconbutton img { width: 30px }
+
+footer {
+    background-color: rgb(240, 234, 245);
+    margin: 20px 0 0 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+}
