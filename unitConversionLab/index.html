@@ -2,21 +2,24 @@
 <html>
     <head>
         <title>Unit Conversions</title>
+        <link rel="stylesheet" href="./style.css" />
     </head>
 
     <body>
         <section id="home">
-            <header><b>Unit Conversions</b></header>
+            <header>Unit Conversions</header>
 
             <nav>
-                <a href="#temperature"><button>Temperature</button></a>
-                <a href="#weight"><button>Weight</button></a>
-                <a href="#distance"><button>Distance</button></a>
+                <div class="topdiv">
+                    <a href="#tmp"><button class="topmenu">Temperature</button></a>
+                    <a href="#wgt"><button class="topmenu">Weight</button></a>
+                    <a href="#dst"><button class="topmenu">Distance</button></a>
+                </div>
             </nav>
         </section>
 
         <div id="all-conversion-sections">
-            <section id="temperature">
+            <section class="b temperature">
                 <div id="tmp">
                     <figure>
                         <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="200px" />
@@ -40,7 +43,7 @@
                 </div>
             </section>
 
-            <section id="weight">
+            <section class="b weight">
                 <div id="wgt">
                     <figure>
                         <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width="200px" />
@@ -64,7 +67,7 @@
                 </div>
             </section>
 
-            <section id="distance">
+            <section class="b distance">
                 <div id="dst">
                     <figure>
                         <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png" width="200px" />
@@ -89,7 +92,7 @@
             </section>
         </div>
 
-        <div id="go-home">
+        <div class="iconbutton">
             <a href="#home">
                 <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg" />
             </a>
