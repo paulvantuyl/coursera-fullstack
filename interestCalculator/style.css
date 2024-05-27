@@ -1,0 +1,123 @@
+/* HTML elements */
+body { 
+    background-color: #1e1e1e;
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1 { 
+    color: #D1D8C5;
+    margin: 0 0 4px;
+    font-size: 1.25rem;
+}
+
+h4 {
+    margin: 24px 0 4px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, .25)
+}
+
+input { 
+    margin-bottom: 16px;
+    width: 100%;
+    min-height: 24px;
+}
+
+label { 
+    font-size: .8em;
+    font-weight: 600;
+}
+
+input[type="range"] {
+    cursor: pointer;
+    display: flex;
+    margin: 0;
+}
+
+button {
+    background-color: #615EFC;
+    color: white;
+    border: 2px solid #615EFC;
+    border-radius: 24px;
+    padding: 4px 16px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: all .2s ease-out;
+}
+
+button:hover { box-shadow: 0 4px 12px 4px rgba(0, 0, 0, .25) }
+mark         { background-color: #D1D8C5 }
+dl           { display: flex}
+dt           { flex: 1 }
+dt,
+dd           { border-bottom: 1px solid rgba(255, 255, 255, .15) }
+
+dd { 
+    flex: none;
+    margin-left: 0
+}
+
+
+ 
+
+footer {
+    width: 300px;
+    margin: auto;
+    font-size: .75em;
+}
+
+/* Layout */
+.maindiv {
+    background-color: #323232;
+    width: 300px;
+    padding: 24px;
+    border-radius: 16px;
+    margin: 24px auto;
+}
+
+/* Helper classes */
+.hidden  { display: none }
+.visible { display: block }
+.m-b-16  { margin-bottom: 16px }
+
+.col-2 {
+    display: flex;
+    align-items: center;
+}
+
+/* Form elements */
+
+#reset {
+    background-color: #323232;
+    border-color: #323232;
+    margin-left: .5em;
+}
+
+#result {
+    background-color: rgba(255, 255, 255, .15);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Light theme */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #eee;
+        color: #1e1e1e;
+    }
+
+    h1       { color: #7E8EF1 }
+    h4       { border-top: 1px solid rgba(0, 0, 0, .25) }
+    mark     { background-color: #7E8EF1 }
+    dt,
+    dd       { border-bottom: 1px solid rgba(0, 0, 0, .15) }
+    .maindiv { background-color: #fafafa }
+    #result  { background-color: #D1D8C5 }
+
+    #reset {
+        background-color: #fafafa;
+        border-color: #fafafa;
+        color: #615EFC
+    }
+}
