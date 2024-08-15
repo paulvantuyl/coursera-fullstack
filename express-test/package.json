@@ -1,0 +1,9 @@
+{
+  "name": "temperature",
+  "version": "1.0.0",
+  "description": "Retrieve current weather conditions in the United States",
+  "main": "mynodeserver.js",
+  "dependencies": {
+    "express": "4.x"
+  }
+}
