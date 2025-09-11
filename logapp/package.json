@@ -1,0 +1,17 @@
+{
+  "name": "logapp",
+  "version": "1.0.0",
+  "description": "Debugging and troubleshooting a Node application to ensure expected behavior is easily done through log analysis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["node", "express", "logging", "winston", "log files"],
+  "author": "Lavanya TS, Paul Van Tuyl",
+  "license": "",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "winston": "^3.17.0"
+  }
+}
